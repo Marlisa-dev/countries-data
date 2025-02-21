@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  border-bottom: 1px solid black;
+}
+.navbar h1{
+  font-size: 25px;
+}
+.dark-mode{
+  display: flex;
+}
+.dark-mode h4{
+  margin-left: 8px;
+}
