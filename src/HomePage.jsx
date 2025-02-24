@@ -40,7 +40,7 @@ export const HomePage = () => {
         </div>
         
         <div className="countrylist">
-            {countries.map((country) => (
+            {filteredCountries.map((country) => (
                 <CountryCard country={country} key={country.cca3} />
             ))}
         </div>
