@@ -32,10 +32,17 @@ export const HomePage = () => {
             setFilteredCountries(filtered);
         }
     }
+
+    const handleSearch = (query) => {
+        const filtered = countries.filter((country) => {
+            return country.name.common.toLowerCase().includes(query.toLowerCase());
+        });
+        setFilteredCountries(filtered);
+    }
   return (
     <>
         <div className="searchandfilter">
-            <Search />
+            <Search onSearch={handleSearch}/>
             <FilterRegion regions={regions} onSelect={handleRegionSelect}/>
         </div>
         

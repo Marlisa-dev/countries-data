@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Search = () => {
+const Search = ({ onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleChange = (event) => {
+    const query = event.target.value;
+    setSearchQuery(query);
+    onSearch(query);
+  }
   return (
-    <div>Search</div>
+    <div className='search-bar'>
+      <input
+        type='text'
+        placeholder='Search for a country...'
+        value={searchQuery}
+        onChange={handleChange}
+      />
+    </div>
   )
 }
 
