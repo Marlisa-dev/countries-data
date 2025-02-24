@@ -12,7 +12,6 @@ export const HomePage = () => {
             .then((response) => response.json())
             .then((data) => setCountries(data))
             .catch((error) => console.error("Error fetching data: ", error));
-            });
     }, []);
     console.log(countries);
   return (
