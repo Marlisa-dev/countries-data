@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <h1>Where in the world?</h1>
-        <div className="dark-mode">
-            <IoMoonOutline />
-            <h4>Dark Mode</h4>
-        </div>
+          <div className="dark-mode">
+              <IoMoonOutline />
+              <h4>Dark Mode</h4>
+          </div>
     </div>
   )
 }

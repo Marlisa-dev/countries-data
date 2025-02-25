@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CountryCard from '../components/CountryCard';
 import Search from '../components/Search';
 import FilterRegion from '../components/FilterRegion';
+import { Link } from 'react-router-dom';
 
 
 export const HomePage = () => {
@@ -48,7 +49,9 @@ export const HomePage = () => {
         
         <div className="countrylist">
             {filteredCountries.map((country) => (
-                <CountryCard country={country} key={country.cca3} />
+                <Link to={`/country/${country.cca3}`} key={country.cca3}>
+                    <CountryCard country={country} key={country.cca3} />
+                </Link>
             ))}
         </div>
     </>
