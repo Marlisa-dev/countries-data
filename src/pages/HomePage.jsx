@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import CountryCard from './components/CountryCard';
-import Search from './components/Search';
-import FilterRegion from './components/FilterRegion';
+import CountryCard from '../components/CountryCard';
+import Search from '../components/Search';
+import FilterRegion from '../components/FilterRegion';
 
 
 export const HomePage = () => {
